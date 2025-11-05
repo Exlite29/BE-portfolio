@@ -26,7 +26,7 @@ app.get("/health", async (req: Request, res: Response) => {
 
 app.use("/api/contact", contactRouter);
 
-// 404
+// 404 error
 app.use((req: Request, res: Response) => {
   res.status(404).json({ success: false, message: "Not Found" });
 });
